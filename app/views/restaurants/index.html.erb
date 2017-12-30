@@ -1,0 +1,15 @@
+<div id="restaurants">
+  <ul>
+    <%= @restaurants.each do |restaurant| %>
+    <li>
+      <p id="restaurant-name">
+        <%= restaurant.name %>
+      </p>
+        <p id="restaurant-description">
+          <%=restaurant.description%>
+        </p>
+      </li>
+      <br><br>
+      <% end %>
+    </ul>
+  </div>
